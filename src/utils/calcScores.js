@@ -9,6 +9,7 @@
  * @param {string} programType - One of: "single", "group", "kulliyah"
  * @returns {number} Total calculated score
  */
+
 export function calcScore(position, grade, programType = "single") {
   // Position points based on program type
   const positionPoints = {

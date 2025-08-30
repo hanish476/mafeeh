@@ -17,17 +17,6 @@ export default function App() {
           </Routes>
         </main>
       </Router>
-
-      {/* Semi-circular gradient at the bottom */}
-      <div className="h-30">
-        <div 
-        className="absolute -z-50 bottom-0 left-0 right-0  h-88"
-        style={{
-          background: 'radial-gradient(ellipse at bottom, rgba(57, 45, 2, 0.9) 10%, rgba(57, 45, 2, 0) 70%)',
-          zIndex: 0,
-        }}
-      ></div>
-      </div>
     </div>
   );
 }

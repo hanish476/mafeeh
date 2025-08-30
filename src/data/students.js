@@ -8,10 +8,10 @@ export const students = [
   { id: "544", name: "Abdul Jabbar", team: "SAMA", class: 6 },
   { id: "332", name: "Al Ameen", team: "NAWA", class: 4 },
   { id: "144", name: "Ameen", team: "SWABA", class: 6 },
-  { id: "534", name: "Hassan L", team: "SWAFA", class: 2 },
+  { id: "534", name: "Hassan L", team: "SAMA", class: 2 },
   { id: "345", name: "Sinan PM", team: "SAMA", class: 7 },
   { id: "548", name: "Ziyad KK", team: "SAMA", class: 6 },
-  { id: "473", name: "Irfan P", team: "SWAFA", class: 8 },
+  { id: "473", name: "Irfan P", team: "SAMA", class: 8 },
 
   // --- Newly Added Students ---
   // === Bidaya (Class 1) ===
@@ -57,6 +57,7 @@ export const students = [
   { id: "714", name: "Shanaj Kader M N", team: "SWAFA", class: 3 },
   { id: "715", name: "Muhammad Faheem K M", team: "SAMA", class: 3 },
   { id: "716", name: "Muhammed Shabeeb T S", team: "SAMA", class: 3 },
+   { id: "717", name: "MUHAMMED FAZAL C S", team: "SWAFA", class: 3 },
   { id: "719", name: "Muhammed Sinan T S", team: "SWABA", class: 2 },
   { id: "720", name: "Muhammed Faheem KK", team: "SWABA", class: 3 },
   { id: "722", name: "Muhammed Shammas M S", team: "SWAFA", class: 3 },
