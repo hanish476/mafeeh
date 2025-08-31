@@ -8,7 +8,7 @@ export const students = [
   { id: "544", name: "Abdul Jabbar", team: "SAMA", class: 6 },
   { id: "332", name: "Al Ameen", team: "NAWA", class: 4 },
   { id: "144", name: "Ameen", team: "SWABA", class: 6 },
-  { id: "534", name: "Hassan L", team: "SAMA", class: 2 },
+  { id: "534", name: "Jasil L", team: "SAMA", class: 2 },
   { id: "345", name: "Sinan PM", team: "SAMA", class: 7 },
   { id: "548", name: "Ziyad KK", team: "SAMA", class: 6 },
   { id: "473", name: "Irfan P", team: "SAMA", class: 8 },
