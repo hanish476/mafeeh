@@ -15,8 +15,8 @@ export const results = [
      datePublished: "2025-08-30T16:00:00",
     placements: [
       { position: 1, grade: "A", studentId: "803" }, // 5 + 5 = 10
-      { position: 2, grade: "B", studentId: "793" }, // 3 + 3 = 6
-      { position: 3, grade: "-", studentId: "812" }, // 1 + 0 = 1
+      { position: 2, grade: "B", studentId: "812" }, // 3 + 3 = 6
+      { position: 3, grade: "-", studentId: "793" }, // 1 + 0 = 1
     ]
   },
   {
@@ -29,6 +29,7 @@ export const results = [
       { position: 1, grade: "A", studentId: "743" }, // 5 + 5 = 10
       { position: 2, grade: "B", studentId: "717" }, // 3 + 3 = 6
       { position: 3, grade: "B", studentId: "746" }, // 1 + 3 = 4
+      {grade: "B", studentId: "736" }               // 0 + 3 = 3 (no position)
     ]
   },
   {
