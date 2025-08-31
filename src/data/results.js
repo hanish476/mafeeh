@@ -12,7 +12,7 @@ export const results = [
     programName: "HAND WRITING MLM",
     category: "Bidaya",
     programType: "single",
-    datePublished: "2025-04-05T16:00:00",
+     datePublished: "2025-08-30T16:00:00",
     placements: [
       { position: 1, grade: "A", studentId: "803" }, // 5 + 5 = 10
       { position: 2, grade: "B", studentId: "793" }, // 3 + 3 = 6
@@ -24,7 +24,7 @@ export const results = [
     programName: "WATER PAINTING",
     category: "Ula",
     programType: "single",
-    datePublished: "2025-04-05T16:00:00",
+     datePublished: "2025-08-30T16:00:00",
     placements: [
       { position: 1, grade: "A", studentId: "743" }, // 5 + 5 = 10
       { position: 2, grade: "B", studentId: "717" }, // 3 + 3 = 6
@@ -36,7 +36,7 @@ export const results = [
     programName: "GK QUIZ",
     category: "Thaniyya",
     programType: "single",
-    datePublished: "2025-04-05T16:00:00",
+    datePublished: "2025-08-30T16:00:00",
     placements: [
       { position: 1, grade: "-", studentId: "614" }, // 5 + 0 = 5
       { position: 2, grade: "-", studentId: "659" }, // 3 + 0 = 3
@@ -48,7 +48,7 @@ export const results = [
     programName: "MAQAMA ARB",
     category: "Thanawiyya",
     programType: "single",
-    datePublished: "2025-04-05T16:00:00",
+     datePublished: "2025-08-30T16:00:00",
     placements: [
       { position: 1, grade: "A", studentId: "534" }, // 5 + 5 = 10
       { position: 2, grade: "B", studentId: "535" }, // 3 + 3 = 6
@@ -60,7 +60,7 @@ export const results = [
     programName: "ACADEMIC ESSAY",
     category: "Aliya",
     programType: "single",
-    datePublished: "2025-04-05T16:00:00",
+    datePublished: "2025-08-30T16:00:00",
     placements: [
       { position: 1, grade: "A", studentId: "485" }, // 5 + 5 = 10
       { position: 2, grade: "B", studentId: "782" }, // 3 + 3 = 6
