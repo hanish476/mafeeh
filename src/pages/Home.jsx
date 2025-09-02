@@ -67,27 +67,45 @@ export default function Home() {
   // ======================
   // CATEGORY-WISE TEAM SCORES
   // ======================
-  const categoryScores = {};
-  structuredResults.forEach((program) => {
-    program.placements.forEach((p) => {
-      const category = p.category;
-      if (!category) return;
+// 1. define the set of valid teams once
+const VALID_TEAMS = new Set(['NAWA', 'SWAFA', 'SWABA', 'SAMA']);
 
-      if (!categoryScores[category]) categoryScores[category] = {};
-      if (!categoryScores[category][p.team]) categoryScores[category][p.team] = 0;
-
-      categoryScores[category][p.team] += p.score;
-    });
+structuredResults.forEach(({ programName, placements }) => {
+  placements.forEach((p, idx) => {
+    if (p.team && !VALID_TEAMS.has(p.team)) {
+      console.log(
+        `⚠️  Invalid team detected`,
+        {
+          programName,
+          placementIndex: idx,
+          placement: p,
+          rawTeamValue: p.team
+        }
+      );
+    }
   });
+});
 
-  // Prepare category top teams
-  const categoryTopTeams = Object.entries(categoryScores).map(([category, teams]) => {
-    const sorted = Object.entries(teams)
-      .sort((a, b) => b[1] - a[1])
-      .map(([team, score]) => ({ team, score }));
-      console.log(category, sorted);
-    return { category, teams: sorted };
+const categoryScores = {};
+
+structuredResults.forEach(({ placements }) => {
+  placements.forEach(({ category, team, score }) => {
+    // skip if any required field is missing or team is not valid
+    if (!category || !team || !VALID_TEAMS.has(team)) return;
+
+    categoryScores[category] ??= {};
+    categoryScores[category][team] = (categoryScores[category][team] || 0) + score;
   });
+});
+
+// 2. build the final array (unchanged)
+const categoryTopTeams = Object.entries(categoryScores).map(([category, teams]) => ({
+  category,
+  teams: Object.entries(teams)
+    .sort(([, a], [, b]) => b - a)
+    .map(([team, score]) => ({ team, score })),
+}));
+
 
   // ======================
   // RENDER
