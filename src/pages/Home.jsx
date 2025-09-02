@@ -25,7 +25,7 @@ export default function Home() {
     .map((program) => {
       const placements = program.placements.map((placement) => {
         const student = students.find((s) => s.id === placement.studentId);
-
+       
         // Only pass position number (1,2,3) and grade to calcScore
         const position = placement.position || null; // 1, 2, 3 or null
         const grade = placement.grade === "-" ? null : placement.grade; // normalize "-"
@@ -40,7 +40,12 @@ export default function Home() {
           programId: program.programId,
           score: calcScore(position, grade, "single"), // All programs are single
         };
+       
       });
+       console.log(students.team === "-" ? students.name : "");
+       if(students.team === "-"){
+        console.log(students.name); 
+       }
       return { ...program, placements };
     });
 

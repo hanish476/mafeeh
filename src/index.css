@@ -1,9 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Kode+Mono:wght@400..700&display=swap');
+
 @import "tailwindcss";
-
-
 
 @layer base {
   html {
     scroll-behavior: smooth;
+  }
+   body {
+    --font-family-kodo : 'Kode Mono', monospace;
+    font-family: 'cutive mono', monospace;
+  
   }
 }

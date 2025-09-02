@@ -346,4 +346,56 @@ export const results = [
 
     ]
   },
+   {
+    programId: "B04",
+    programName: "WAʿẒ",
+    category: "Bidaya",
+    programType: "single",
+    datePublished: "2025-09-1T16:00:00",
+    placements: [
+      { position: 1, grade: "-", studentId: "795" }, // 5 + 5 = 10
+      { position: 2, grade: "-", studentId: "800" }, // 3 + 3 = 6
+      { position: 3, grade: "-", studentId: "801" }, // 1 + 3 =  
+
+    ]
+  },
+    {
+    programId: "u08",
+    programName: "PADHYAPARAYANAM",
+    category: "Bidaya",
+    programType: "single",
+    datePublished: "2025-09-1T16:00:00",
+    placements: [
+      { position: 1, grade: "-", studentId: "753" }, // 5 + 5 = 10
+      { position: 2, grade: "-", studentId: "744" }, // 3 + 3 = 6
+      { position: 3, grade: "-", studentId: "726" }, // 1 + 3 =  
+
+    ]
+  },
+   {
+    programId: "U22",
+    programName: "POEM WRITING ENG",
+    category: "Bidaya",
+    programType: "single",
+    datePublished: "2025-09-1T16:00:00",
+    placements: [
+      { position: 1, grade: "B", studentId: "786" }, // 5 + 5 = 10
+      { position: 2, grade: "-", studentId: "710" }, // 3 + 3 = 6
+      { position: 3, grade: "-", studentId: "749" }, // 1 + 3 =  
+
+    ]
+  },
+  {
+    programId: "U25",
+    programName: "STORY COMPLETION ARB ",
+    category: "Bidaya",
+    programType: "single",
+    datePublished: "2025-09-1T16:00:00",
+    placements: [
+      { position: 1, grade: "-", studentId: "786" }, // 5 + 5 = 10
+      { position: 2, grade: "-", studentId: "710" }, // 3 + 3 = 6
+      { position: 3, grade: "-", studentId: "749" }, // 1 + 3 =  
+
+    ]
+  },
 ];

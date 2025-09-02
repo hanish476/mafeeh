@@ -15,7 +15,8 @@ export const students = [
 
   // --- Newly Added Students ---
   // === Bidaya (Class 1) ===
-  { id: "777", name: "Sahal K.S", team: "SWAFA", class: 1 },
+  { id: "778", name: "Sahal K.S", team: "SWAFA", class: 1 },
+    { id: "777", name: "AFVAS P.V", team: "SWAFA", class: 1 },
   { id: "788", name: "Ahmed Yaseen U.A", team: "SWABA", class: 1 },
   { id: "789", name: "Aman Hamsa", team: "SWAFA", class: 1 },
   { id: "790", name: "Mohamed Subhan K R", team: "SWAFA", class: 1 },
@@ -272,3 +273,6 @@ export const students = [
 ];
 
 // Total: 150+ students (you can slice if needed)
+
+
+
