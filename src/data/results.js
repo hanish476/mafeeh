@@ -2933,5 +2933,33 @@ export const results = [
         "position": 3
       }
     ]
+  },
+   {
+    "programId": "TY09",
+    "programName": "SPEECH ARB",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "653",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "636",
+        "position": 3,
+        "grade": "A"
+      },
+      {
+        "studentId": "681",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "618",
+        "grade": "A"
+      }
+    ]
   }
 ]
