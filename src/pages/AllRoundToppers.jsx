@@ -66,8 +66,7 @@ export default function AllRoundToppers() {
 
     results.forEach((program) => {
       program.placements.forEach((p) => {
-        // ✅ Correct: use position number and grade, all single programs
-        const pts = calcScore(p.position, p.grade, "single");
+        const pts = calcScore(p.position, p.grade, program.programType, program.category);
         scoreByStudent.set(p.studentId, (scoreByStudent.get(p.studentId) || 0) + pts);
       });
     });
@@ -80,7 +79,7 @@ export default function AllRoundToppers() {
         name: stu?.name || "Unknown",
         team: stu?.team || "—",
         class: stu?.class ?? "—",
-        category: typeof stu?.class === "number" ? classToCategory(stu.class) : "—",
+        category:  classToCategory(stu.class) ,
       };
     });
 

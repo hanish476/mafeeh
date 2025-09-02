@@ -37,8 +37,8 @@ export default function Home() {
           class: student?.class || "—",
           category: student?.category || program.category, // fallback to program category
           programName: program.programName,
-          programId: program.programId,
-          score: calcScore(position, grade, "single"), // All programs are single
+         programType: program.programType ,
+         score: calcScore(position, grade,program.category, program.programType , program.programId),
         };
 
       });
@@ -213,7 +213,7 @@ export default function Home() {
 
               <div className="space-y-4">
                 <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
-                  <span className="text-sm text-slate-600">Total Programs</span>
+                  <span className="text-sm text-slate-600">Total Published Programs</span>
                   <span className="font-bold text-blue-600">{results.length}</span>
                 </div>
                 <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">

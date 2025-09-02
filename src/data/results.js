@@ -1,3 +1,12 @@
+// ty32
+// ty06
+//th03
+//a10
+//k02
+//k03
+//k04
+//k05
+//k06
 export const results = [
    {
     "programId": "U01",
@@ -704,7 +713,7 @@ export const results = [
     "programId": "A04",
     "programName": "MASHUP",
     "category": "Aliya",
-    "programType": "single",
+    "programType": "group",
     "datePublished": "2025-09-01T12:00:00",
     "placements": [
       {
@@ -1299,7 +1308,7 @@ export const results = [
     "programId": "B08",
     "programName": "GROUP SONG",
     "category": "Bidaya",
-    "programType": "single",
+    "programType": "group",
     "datePublished": "2025-09-01T12:00:00",
     "placements": [
       {
@@ -1773,7 +1782,7 @@ export const results = [
     "programId": "K01",
     "programName": "QAWWALI URD",
     "category": "Kulliyya",
-    "programType": "single",
+    "programType": "group",
     "datePublished": "2025-09-01T12:00:00",
     "placements": [
       {
@@ -1800,7 +1809,7 @@ export const results = [
     "programId": "K08",
     "programName": "MUSHARA",
     "category": "Kulliyya",
-    "programType": "single",
+    "programType": "group",
     "datePublished": "2025-09-01T12:00:00",
     "placements": [
       {
@@ -2418,7 +2427,7 @@ export const results = [
     "programId": "TY06",
     "programName": "GROUP SONG",
     "category": "Thaniyya",
-    "programType": "single",
+    "programType": "group",
     "datePublished": "2025-09-01T12:00:00",
     "placements": [
       {
