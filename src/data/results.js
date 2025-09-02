@@ -255,7 +255,7 @@ export const results = [
 
     ]
   },
-   {
+  {
     programId: "U02",
     programName: "ḤIFẒ",
     category: "Ula",
@@ -268,7 +268,7 @@ export const results = [
 
     ]
   },
-   {
+  {
     programId: "U09",
     programName: "CHAIN STORY",
     category: "Ula",
@@ -281,7 +281,7 @@ export const results = [
 
     ]
   },
-   {
+  {
     programId: "U11",
     programName: "SPEECH ENG",
     category: "Ula",
@@ -294,7 +294,7 @@ export const results = [
 
     ]
   },
-    {
+  {
     programId: "U13",
     programName: "WORD FIGHT ENG",
     category: "Ula",
@@ -307,7 +307,7 @@ export const results = [
 
     ]
   },
-    {
+  {
     programId: "TH01",
     programName: "ḤIFẒ & QIRĀʾAH |",
     category: "Thanawiyya",
@@ -320,7 +320,7 @@ export const results = [
 
     ]
   },
-   {
+  {
     programId: "TH06",
     programName: "SPEECH URD",
     category: "Thanawiyya",
@@ -333,7 +333,7 @@ export const results = [
 
     ]
   },
-   {
+  {
     programId: "TH17",
     programName: "SPEECH URD",
     category: "Thanawiyya",
@@ -346,56 +346,279 @@ export const results = [
 
     ]
   },
-   {
-    programId: "B04",
-    programName: "WAʿẒ",
-    category: "Bidaya",
-    programType: "single",
-    datePublished: "2025-09-1T16:00:00",
-    placements: [
-      { position: 1, grade: "-", studentId: "795" }, // 5 + 5 = 10
-      { position: 2, grade: "-", studentId: "800" }, // 3 + 3 = 6
-      { position: 3, grade: "-", studentId: "801" }, // 1 + 3 =  
 
-    ]
+  {
+    "programId": "B04",
+    "programName": "WAʿẒ",
+    "category": "Bidaya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": []
   },
-    {
-    programId: "u08",
-    programName: "PADHYAPARAYANAM",
-    category: "Bidaya",
-    programType: "single",
-    datePublished: "2025-09-1T16:00:00",
-    placements: [
-      { position: 1, grade: "-", studentId: "753" }, // 5 + 5 = 10
-      { position: 2, grade: "-", studentId: "744" }, // 3 + 3 = 6
-      { position: 3, grade: "-", studentId: "726" }, // 1 + 3 =  
-
-    ]
-  },
-   {
-    programId: "U22",
-    programName: "POEM WRITING ENG",
-    category: "Bidaya",
-    programType: "single",
-    datePublished: "2025-09-1T16:00:00",
-    placements: [
-      { position: 1, grade: "B", studentId: "786" }, // 5 + 5 = 10
-      { position: 2, grade: "-", studentId: "710" }, // 3 + 3 = 6
-      { position: 3, grade: "-", studentId: "749" }, // 1 + 3 =  
-
+ {
+    "programId": "B04",
+    "programName": "WAʿẒ",
+    "category": "Bidaya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "795",
+        "position": 1
+      },
+      {
+        "studentId": "800",
+        "position": 2
+      },
+      {
+        "studentId": "801",
+        "position": 3
+      }
     ]
   },
   {
-    programId: "U25",
-    programName: "STORY COMPLETION ARB ",
-    category: "Bidaya",
-    programType: "single",
-    datePublished: "2025-09-1T16:00:00",
-    placements: [
-      { position: 1, grade: "-", studentId: "786" }, // 5 + 5 = 10
-      { position: 2, grade: "-", studentId: "710" }, // 3 + 3 = 6
-      { position: 3, grade: "-", studentId: "749" }, // 1 + 3 =  
-
+    "programId": "U08",
+    "programName": "PADHYAPARAYANAM",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "753",
+        "position": 1
+      },
+      {
+        "studentId": "744",
+        "position": 2
+      },
+      {
+        "studentId": "726",
+        "position": 3
+      }
     ]
   },
+  {
+    "programId": "U22",
+    "programName": "POEM WRITING ENG",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "736",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "710",
+        "position": 2
+      },
+      {
+        "studentId": "749",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "U25",
+    "programName": "STORY COMPLETION ARB",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "708",
+        "position": 1
+      },
+      {
+        "studentId": "720",
+        "position": 2
+      },
+      {
+        "studentId": "730",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "U28",
+    "programName": "GK QUIZ",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "750",
+        "position": 1
+      },
+      {
+        "studentId": "713",
+        "position": 2
+      },
+      {
+        "studentId": "738",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TY01",
+    "programName": "ḤIFẒ & QIRĀʾAH",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "616",
+        "position": 1
+      },
+      {
+        "studentId": "668",
+        "position": 2
+      },
+      {
+        "studentId": "642",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TY12",
+    "programName": "ORU NIMISHAM",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "647",
+        "position": 1
+      },
+      {
+        "studentId": "677",
+        "position": 2
+      },
+      {
+        "studentId": "653",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TY22",
+    "programName": "ESSAY ARB",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "653",
+        "position": 1
+      },
+      {
+        "studentId": "681",
+        "position": 2
+      },
+      {
+        "studentId": "684",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TY28",
+    "programName": "SHORT STORY MLM",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "676",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "659",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "626",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "665",
+        "position": 3,
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "TH07",
+    "programName": "TADRĪS MLM",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "537",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "535",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "603",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "A08",
+    "programName": "ACADEMIC TALK ENG",
+    "category": "Aliya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "458",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "485",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "490",
+        "position": 3,
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "A25",
+    "programName": "CALLIGRAPHY",
+    "category": "Aliya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "449",
+        "position": 1
+      },
+      {
+        "studentId": "498",
+        "position": 2
+      },
+      {
+        "studentId": "453",
+        "position": 3
+      }
+    ]
+  }
 ];
