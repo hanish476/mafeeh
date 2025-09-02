@@ -251,7 +251,7 @@ useDocumentTitle("students - Mafeeh");
                     <div className="mt-8">
                       <h3 className="text-lg    font-bold text-gray-800 mb-4 border-b pb-2 flex items-center">
                         <Award className="h-5 w-5 mr-2 text-amber-600" />
-                        Academic Achievements
+                         Achievements
                       </h3>
 
                       {selectedStudent.results.length > 0 ? (
