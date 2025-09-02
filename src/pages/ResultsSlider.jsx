@@ -107,154 +107,131 @@ export default function ResultsSlider() {
   const currentProgram = filteredResults[currentIndex];
   const hasPositions = currentProgram.withPosition.length > 0;
 
-  return (
-    <div className="w-full max-w-6xl mx-auto px-2 sm:px-4">
-      <div className="relative rounded-xl bg-white shadow-sm border border-slate-200 overflow-hidden">
-        {/* Navigation */}
-        <button
-          onClick={prevSlide}
-          disabled={filteredResults.length <= 1}
-          className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-lg shadow hover:shadow-md disabled:opacity-40 border border-slate-200"
-          aria-label="Previous"
-        >
-          <ChevronLeft className="h-5 w-5 text-slate-700" />
-        </button>
+return (
+  <div className="w-full max-w-6xl mx-auto px-2 sm:px-4">
+    <div className="relative rounded-xl bg-white shadow-sm border border-slate-200 overflow-hidden">
+      {/* ===== Mobile-first navigation ===== */}
+      <button
+        onClick={prevSlide}
+        disabled={filteredResults.length <= 1}
+        className="hidden sm:block absolute left-2 top-1/2 -translate-y-1/2 z-10
+                   bg-white/90 backdrop-blur p-1.5 rounded-full shadow
+                   hover:shadow-md disabled:opacity-40"
+        aria-label="Previous"
+      >
+        <ChevronLeft className="h-4 w-4 text-slate-700" />
+      </button>
 
-        <button
-          onClick={nextSlide}
-          disabled={filteredResults.length <= 1}
-          className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-lg shadow hover:shadow-md disabled:opacity-40 border border-slate-200"
-          aria-label="Next"
-        >
-          <ChevronRight className="h-5 w-5 text-slate-700" />
-        </button>
+      <button
+        onClick={nextSlide}
+        disabled={filteredResults.length <= 1}
+        className="hidden sm:block absolute right-2 top-1/2 -translate-y-1/2 z-10
+                   bg-white/90 backdrop-blur p-1.5 rounded-full shadow
+                   hover:shadow-md disabled:opacity-40"
+        aria-label="Next"
+      >
+        <ChevronRight className="h-4 w-4 text-slate-700" />
+      </button>
 
-        {/* Content */}
-        <div className="p-4 sm:p-6">
-          {/* Header */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-100">
-            <div className="flex items-start gap-3">
-              <div className="p-3 rounded-xl bg-blue-600 text-white">
-                <BookOpen className="h-6 w-6" />
-              </div>
-              <div>
-                <h2 className="font-bold text-slate-900 text-lg line-clamp-2">
-                  {currentProgram.programName}
-                </h2>
-                <div className="flex flex-wrap gap-2 mt-2">
-                  <span className="px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">
-                    <strong>ID:</strong> {currentProgram.programId}
-                  </span>
-                  <span className="px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 text-sm">
-                    <Users className="inline h-3.5 w-3.5 mr-1" />
-                    {currentProgram.placements.length} Participants
-                  </span>
-                  <span className="px-2.5 py-1 rounded-full bg-green-50 text-green-700 text-sm">
-                    {formatTimeAgo(currentProgram.datePublished)}
-                  </span>
-                </div>
+      {/* ===== Content ===== */}
+      <div className="p-4">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
+          <div className="flex items-start gap-3">
+            <div className="p-2 rounded-lg bg-blue-600 text-white flex-shrink-0">
+              <BookOpen className="h-5 w-5" />
+            </div>
+            <div>
+              <h2 className="font-bold text-slate-900 text-base sm:text-lg leading-tight">
+                {currentProgram.programName}
+              </h2>
+              <div className="flex flex-wrap gap-1.5 mt-1 text-xs">
+                <span className="px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">
+                  ID: {currentProgram.programId}
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-blue-50 text-blue-700">
+                  <Users className="inline h-3 w-3 mr-0.5" />
+                  {currentProgram.placements.length}
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-green-50 text-green-700">
+                  {formatTimeAgo(currentProgram.datePublished)}
+                </span>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Winner Cards */}
-          {hasPositions ? (
-            <div className="relative">
-              <div
-                ref={scrollContainerRef}
-                className="flex gap-4 overflow-x-auto pb-4 snap-x sm:grid sm:grid-cols-1 md:grid-cols-3 md:gap-6 md:overflow-visible hide-scrollbar"
-              >
-                {currentProgram.withPosition.map((p, idx) => {
-                  // ✅ Use real calcScore with "single" program type
-                  const score = calcScore(p.position, p.grade, "single");
-                  const studentName = getStudentName(p.studentId);
+        {/* ===== Winner Cards (grid, no scroll) ===== */}
+        {hasPositions ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+            {currentProgram.withPosition.map((p) => {
+              const score = calcScore(p.position, p.grade, 'single');
+              const studentName = getStudentName(p.studentId);
 
-                  return (
-                    <div
-                      key={`${p.studentId}-${idx}`}
-                      className="snap-start flex-shrink-0 w-72 md:w-full bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all relative"
-                    >
-                      {/* Rank Badge */}
-                      <div
-                        className={`absolute -top-2.5 -right-2.5 h-10 w-10 rounded-full ${getPositionBg(
-                          p.position
-                        )} flex items-center justify-center text-white font-bold text-sm shadow`}
-                      >
-                        {p.position}
-                      </div>
+              return (
+                <div
+                  key={p.studentId}
+                  className="bg-white border border-slate-200 rounded-lg p-3 shadow-sm hover:shadow transition-all"
+                >
+                  {/* Rank badge */}
+                  <div
+                    className={`inline-flex items-center justify-center px-2 py-1 rounded-md text-white font-bold text-xs ${getPositionBg(
+                      p.position
+                    )}`}
+                  >
+                    {p.position}
+                  </div>
 
-                      {/* Medal Icon */}
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="h-10 w-10 rounded-full bg-gradient-to-br from-slate-500 to-slate-700 flex items-center justify-center text-white font-bold text-sm">
-                          {p.studentId}
-                        </div>
-                        <div>
-                          <h3 className="font-semibold text-slate-800 text-sm truncate max-w-36">
-                            {studentName}
-                          </h3>
-                          <p className="text-xs text-slate-500">Ad: {p.studentId}</p>
-                        </div>
-                      </div>
-
-                      {/* Grade & Score */}
-                      <div className="space-y-2">
-                        <div className="flex justify-between items-center text-sm">
-                          <span className="text-slate-600">Grade</span>
-                          <span className="font-bold text-slate-800">{p.grade}</span>
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <div className="flex items-center gap-1.5 text-amber-600">
-                            {getMedalIcon(p.position)}
-                            <span className="text-slate-600">Score</span>
-                          </div>
-                          <div className="flex items-center gap-1">
-                            <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
-                            <span className="font-bold text-slate-800">{score}</span>
-                          </div>
-                        </div>
-                      </div>
+                  <div className="mt-3 flex items-center gap-2">
+                    <div className="h-8 w-8 rounded-full bg-slate-600 flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">
+                      {p.studentId}
                     </div>
-                  );
-                })}
-              </div>
+                    <div>
+                      <p className="text-sm font-semibold text-slate-800 leading-tight">
+                        {studentName}
+                      </p>
+                      <p className="text-xs text-slate-500">ID: {p.studentId}</p>
+                    </div>
+                  </div>
 
-              {/* Mobile Scroll Indicator */}
-              {currentProgram.withPosition.length > 1 && (
-                <div className="flex justify-center mt-4 md:hidden space-x-2">
-                  {currentProgram.withPosition.map((_, i) => (
-                    <div
-                      key={i}
-                      className={`h-2 w-2 rounded-full ${
-                        i === 0 ? "bg-blue-600" : "bg-slate-300"
-                      }`}
-                    />
-                  ))}
+                  <div className="mt-2 flex justify-between text-xs">
+                    <span className="text-slate-600">Grade:</span>
+                    <span className="font-bold text-slate-800">{p.grade}</span>
+                  </div>
+
+                  <div className="mt-1 flex justify-between items-center">
+                    <span className="text-slate-600 text-xs">Score:</span>
+                    <span className="font-bold text-amber-600 text-xs">
+                      {score} pts
+                    </span>
+                  </div>
                 </div>
-              )}
-            </div>
-          ) : (
-            <div className="text-center py-8 text-slate-500 text-sm">
-              No ranked participants yet.
-            </div>
-          )}
-        </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="text-center py-8 text-slate-500 text-sm">
+            No ranked participants yet.
+          </div>
+        )}
       </div>
-
-      {/* Pagination Dots */}
-      {filteredResults.length > 1 && (
-        <div className="flex justify-center gap-2 mt-5">
-          {filteredResults.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => goToSlide(i)}
-              className={`h-2.5 w-2.5 rounded-full transition-all ${
-                i === currentIndex ? "bg-blue-600 w-6" : "bg-slate-300 hover:bg-slate-400"
-              }`}
-              aria-label={`Go to slide ${i + 1}`}
-            />
-          ))}
-        </div>
-      )}
     </div>
-  );
+
+    {/* ===== Pagination dots (mobile only) ===== */}
+    {filteredResults.length > 1 && (
+      <div className="flex justify-center gap-1.5 mt-4 md:hidden">
+        {filteredResults.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goToSlide(i)}
+            className={`h-1.5 rounded-full transition-all ${
+              i === currentIndex ? 'bg-blue-600 w-6' : 'bg-slate-300 w-1.5'
+            }`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
+      </div>
+    )}
+  </div>
+);
 }

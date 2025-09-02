@@ -25,7 +25,7 @@ export default function Home() {
     .map((program) => {
       const placements = program.placements.map((placement) => {
         const student = students.find((s) => s.id === placement.studentId);
-       
+
         // Only pass position number (1,2,3) and grade to calcScore
         const position = placement.position || null; // 1, 2, 3 or null
         const grade = placement.grade === "-" ? null : placement.grade; // normalize "-"
@@ -40,12 +40,12 @@ export default function Home() {
           programId: program.programId,
           score: calcScore(position, grade, "single"), // All programs are single
         };
-       
+
       });
-       console.log(students.team === "-" ? students.name : "");
-       if(students.team === "-"){
-        console.log(students.name); 
-       }
+      console.log(students.team === "-" ? students.name : "");
+      if (students.team === "-") {
+        console.log(students.name);
+      }
       return { ...program, placements };
     });
 
@@ -67,44 +67,44 @@ export default function Home() {
   // ======================
   // CATEGORY-WISE TEAM SCORES
   // ======================
-// 1. define the set of valid teams once
-const VALID_TEAMS = new Set(['NAWA', 'SWAFA', 'SWABA', 'SAMA']);
+  // 1. define the set of valid teams once
+  const VALID_TEAMS = new Set(['NAWA', 'SWAFA', 'SWABA', 'SAMA']);
 
-structuredResults.forEach(({ programName, placements }) => {
-  placements.forEach((p, idx) => {
-    if (p.team && !VALID_TEAMS.has(p.team)) {
-      console.log(
-        `⚠️  Invalid team detected`,
-        {
-          programName,
-          placementIndex: idx,
-          placement: p,
-          rawTeamValue: p.team
-        }
-      );
-    }
+  structuredResults.forEach(({ programName, placements }) => {
+    placements.forEach((p, idx) => {
+      if (p.team && !VALID_TEAMS.has(p.team)) {
+        console.log(
+          `⚠️  Invalid team detected`,
+          {
+            programName,
+            placementIndex: idx,
+            placement: p,
+            rawTeamValue: p.team
+          }
+        );
+      }
+    });
   });
-});
 
-const categoryScores = {};
+  const categoryScores = {};
 
-structuredResults.forEach(({ placements }) => {
-  placements.forEach(({ category, team, score }) => {
-    // skip if any required field is missing or team is not valid
-    if (!category || !team || !VALID_TEAMS.has(team)) return;
+  structuredResults.forEach(({ placements }) => {
+    placements.forEach(({ category, team, score }) => {
+      // skip if any required field is missing or team is not valid
+      if (!category || !team || !VALID_TEAMS.has(team)) return;
 
-    categoryScores[category] ??= {};
-    categoryScores[category][team] = (categoryScores[category][team] || 0) + score;
+      categoryScores[category] ??= {};
+      categoryScores[category][team] = (categoryScores[category][team] || 0) + score;
+    });
   });
-});
 
-// 2. build the final array (unchanged)
-const categoryTopTeams = Object.entries(categoryScores).map(([category, teams]) => ({
-  category,
-  teams: Object.entries(teams)
-    .sort(([, a], [, b]) => b - a)
-    .map(([team, score]) => ({ team, score })),
-}));
+  // 2. build the final array (unchanged)
+  const categoryTopTeams = Object.entries(categoryScores).map(([category, teams]) => ({
+    category,
+    teams: Object.entries(teams)
+      .sort(([, a], [, b]) => b - a)
+      .map(([team, score]) => ({ team, score })),
+  }));
 
 
   // ======================
@@ -117,15 +117,19 @@ const categoryTopTeams = Object.entries(categoryScores).map(([category, teams]) 
         <div className="lg:col-span-8 space-y-8">
           {/* Results Slider Section */}
           <motion.div className="bg-white rounded-2xl shadow-xs p-6 border border-slate-100/70">
-            <div className="flex justify-between gap-3 mb-5">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-5">
+              {/* Left side */}
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-sky-50 text-sky-600 shadow-sm">
                   <Sparkles className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl font-bold text-slate-800">Latest Program Results</h2>
+                <h2 className="text-lg sm:text-xl font-bold text-slate-800">
+                  Latest Program Results
+                </h2>
               </div>
 
-              <div className="text-sm text-slate-500 flex items-center gap-2 p-2">
+              {/* Right side */}
+              <div className="text-sm text-slate-500 flex items-center gap-2 pt-1 sm:pt-0">
                 <span className="font-medium">Published</span>
                 <div className="font-bold flex items-center gap-1">
                   <span>{results.length}</span>
@@ -174,15 +178,14 @@ const categoryTopTeams = Object.entries(categoryScores).map(([category, teams]) 
                   >
                     <div className="flex items-center gap-3">
                       <span
-                        className={`flex items-center justify-center h-8 w-8 rounded-full text-sm font-medium ${
-                          i === 0
+                        className={`flex items-center justify-center h-8 w-8 rounded-full text-sm font-medium ${i === 0
                             ? "bg-amber-100 text-amber-800 shadow-sm"
                             : i === 1
-                            ? "bg-blue-100 text-blue-800 shadow-sm"
-                            : i === 2
-                            ? "bg-rose-100 text-rose-800 shadow-sm"
-                            : "bg-slate-200 text-slate-600"
-                        }`}
+                              ? "bg-blue-100 text-blue-800 shadow-sm"
+                              : i === 2
+                                ? "bg-rose-100 text-rose-800 shadow-sm"
+                                : "bg-slate-200 text-slate-600"
+                          }`}
                       >
                         {i + 1}
                       </span>
@@ -274,15 +277,14 @@ const categoryTopTeams = Object.entries(categoryScores).map(([category, teams]) 
                   >
                     <div className="flex items-center gap-4">
                       <div
-                        className={`flex items-center justify-center h-10 w-10 rounded-full text-white font-bold text-sm ${
-                          idx === 0
+                        className={`flex items-center justify-center h-10 w-10 rounded-full text-white font-bold text-sm ${idx === 0
                             ? "bg-gradient-to-br from-amber-500 to-amber-600 shadow-[0_4px_12px_rgba(245,158,11,0.3)]"
                             : idx === 1
-                            ? "bg-gradient-to-br from-blue-500 to-blue-600 shadow-[0_4px_12px_rgba(59,130,246,0.3)]"
-                            : idx === 2
-                            ? "bg-gradient-to-br from-rose-500 to-rose-600 shadow-[0_4px_12px_rgba(236,72,153,0.3)]"
-                            : "bg-gradient-to-br from-slate-500 to-slate-600"
-                        }`}
+                              ? "bg-gradient-to-br from-blue-500 to-blue-600 shadow-[0_4px_12px_rgba(59,130,246,0.3)]"
+                              : idx === 2
+                                ? "bg-gradient-to-br from-rose-500 to-rose-600 shadow-[0_4px_12px_rgba(236,72,153,0.3)]"
+                                : "bg-gradient-to-br from-slate-500 to-slate-600"
+                          }`}
                       >
                         {idx + 1}
                       </div>
