@@ -347,14 +347,7 @@ export const results = [
     ]
   },
 
-  {
-    "programId": "B04",
-    "programName": "WAʿẒ",
-    "category": "Bidaya",
-    "programType": "single",
-    "datePublished": "2025-09-01T12:00:00",
-    "placements": []
-  },
+  
  {
     "programId": "B04",
     "programName": "WAʿẒ",
@@ -620,5 +613,138 @@ export const results = [
         "position": 3
       }
     ]
+  },
+  {
+    "programId": "TH17",
+    "programName": "POEM ARB",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "535",
+        "position": 1
+      },
+      {
+        "studentId": "572",
+        "position": 2
+      },
+      {
+        "studentId": "606",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "B05",
+    "programName": "SONG MLM",
+    "category": "Bidaya",
+    "programType": "single",
+    "datePublished": "2025-09-02T12:51:00",
+    "placements": [
+      { "studentId": "817", "position": 1, "grade": "A", "team": "SAMA" },
+      { "studentId": "806", "position": 2, "grade": "A", "team": "NAWA" },
+      { "studentId": "800", "position": 3, "grade": "-", "team": "SWABA" }
+    ]
+  },
+  {
+    "programId": "B13",
+    "programName": "WORD FIGHT ENG",
+    "category": "Bidaya",
+    "programType": "single",
+    "datePublished": "2025-09-02T12:51:00",
+    "placements": [
+      { "studentId": "816", "position": 1, "grade": "A", "team": "SAMA" },
+      { "studentId": "793", "position": 2, "grade": "A", "team": "SWABA" },
+      { "studentId": "802", "position": 3, "grade": "B", "team": "SWABA" },
+      { "studentId": "790", "position": 4, "grade": "B", "team": "SWAFA" }
+    ]
+  },
+  {
+    "programId": "B19",
+    "programName": "MSWORD",
+    "category": "Bidaya",
+    "programType": "single",
+    "datePublished": "2025-09-02T12:51:00",
+    "placements": [
+      { "studentId": "788", "position": 1, "grade": "-", "team": "SWABA" },
+      { "studentId": "807", "position": 2, "grade": "-", "team": "SWAFA" },
+      { "studentId": "794", "position": 3, "grade": "-", "team": "NAWA" }
+    ]
+  },
+  {
+    "programId": "B22",
+    "programName": "HAND WRITING ENG",
+    "category": "Bidaya",
+    "programType": "single",
+    "datePublished": "2025-09-02T12:51:00",
+    "placements": [
+      { "studentId": "793", "position": 1, "grade": "B", "team": "SWABA" },
+      { "studentId": "814", "position": 2, "grade": "B", "team": "SWABA" },
+      { "studentId": "807", "position": 3, "grade": "-", "team": "SWAFA" }
+    ]
+  },
+  {
+    "programId": "U05",
+    "programName": "SONG ARB",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-02T12:51:00",
+    "placements": [
+      { "studentId": "753", "position": 1, "grade": "A", "team": "SAMA" },
+      { "studentId": "726", "position": 2, "grade": "A", "team": "SWABA" },
+      { "studentId": "775", "position": 3, "grade": "-", "team": "NAWA" }
+    ]
+  },
+  {
+    "programId": "TY09",
+    "programName": "SPEECH ARB",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-02T12:51:00",
+    "placements": [
+      { "studentId": "653", "position": 1, "grade": "A", "team": "SWAFA" },
+      { "studentId": "618", "position": 2, "grade": "A", "team": "NAWA" },
+      { "studentId": "636", "position": 3, "grade": "A", "team": "SWAFA" },
+      { "studentId": "681", "position": 3, "grade": "B", "team": "NAWA" }
+    ]
+  },
+  {
+    "programId": "TY24",
+    "programName": "POEM MLM",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-02T12:51:00",
+    "placements": [
+      { "studentId": "614", "position": 1, "grade": "A", "team": "SAMA" },
+      { "studentId": "676", "position": 2, "grade": "-", "team": "SWAFA" },
+      { "studentId": "683", "position": 3, "grade": "-", "team": "SAMA" }
+    ]
+  },
+  {
+    "programId": "TH14",
+    "programName": "ESSAY URD",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-02T12:51:00",
+    "placements": [
+      { "studentId": "551", "position": 1, "grade": "A", "team": "SAMA" },
+      { "studentId": "543", "position": 2, "grade": "A", "team": "SWABA" },
+      { "studentId": "585", "position": 3, "grade": "B", "team": "SAMA" },
+      { "studentId": "587", "position": 3, "grade": "B", "team": "SWAFA" }
+    ]
+  },
+  {
+    "programId": "A19",
+    "programName": "POEM URD",
+    "category": "Aliya",
+    "programType": "single",
+    "datePublished": "2025-09-02T12:51:00",
+    "placements": [
+      { "studentId": "781", "position": 1, "grade": "A", "team": "SAMA" },
+      { "studentId": "780", "position": 2, "grade": "B", "team": "SWAFA" },
+      { "studentId": "458", "position": 3, "grade": "B", "team": "SWABA" }
+    ]
   }
+
 ];
