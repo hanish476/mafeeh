@@ -61,17 +61,27 @@ const getPositionColor = (position) => {
 };
 
 export default function AllRoundToppers() {
-  const toppers = useMemo(() => {
-    const scoreByStudent = new Map();
+const toppers = useMemo(() => {
+  const scoreByStudent = new Map();
 
-    results.forEach((program) => {
-      program.placements.forEach((p) => {
-        const pts = calcScore(p.position, p.grade, program.programType, program.category);
-        scoreByStudent.set(p.studentId, (scoreByStudent.get(p.studentId) || 0) + pts);
-      });
+  results.forEach((program) => {
+    program.placements.forEach((p) => {
+      /* ---------- skip group entries & broken student refs ---------- */
+      if (program.programType === "group") return;
+      if (!p.studentId || p.studentId === "undefined") return;
+
+      const pts = calcScore(
+        p.position || null,
+        p.grade === "-" ? null : p.grade,
+        program.programType,
+        program.category
+      );
+      scoreByStudent.set(p.studentId, (scoreByStudent.get(p.studentId) || 0) + pts);
     });
+  });
 
-    const rows = Array.from(scoreByStudent.entries()).map(([studentId, total]) => {
+  const rows = Array.from(scoreByStudent.entries())
+    .map(([studentId, total]) => {
       const stu = students.find((s) => s.id === studentId);
       return {
         studentId,
@@ -79,20 +89,15 @@ export default function AllRoundToppers() {
         name: stu?.name || "Unknown",
         team: stu?.team || "—",
         class: stu?.class ?? "—",
-        category:  classToCategory(stu.class) ,
+        category: classToCategory(stu?.class),
       };
-    });
+    })
+    .sort((a, b) => b.total - a.total || a.name.localeCompare(b.name))
+    .slice(0, 5)
+    .map((row, i) => ({ ...row, position: i + 1 }));
 
-    // Sort by score then name
-    rows.sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
-
-    // Assign position
-    return rows.slice(0, 5).map((row, i) => ({
-      ...row,
-      position: i + 1,
-    }));
-  }, []);
-
+  return rows;
+}, []);
   const [currentPage, setCurrentPage] = useState(0);
   const [direction, setDirection] = useState(0);
   const itemsPerPage = 5;

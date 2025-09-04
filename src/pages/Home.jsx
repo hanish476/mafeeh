@@ -19,50 +19,56 @@ export default function Home() {
   // ======================
   // STRUCTURE RESULTS WITH STUDENT & SCORE
   // ======================
-  const structuredResults = results
-    .slice()
-    .reverse()
-    .map((program) => {
-      const placements = program.placements.map((placement) => {
-        const student = students.find((s) => s.id === placement.studentId);
 
-        // Only pass position number (1,2,3) and grade to calcScore
-        const position = placement.position || null; // 1, 2, 3 or null
-        const grade = placement.grade === "-" ? null : placement.grade; // normalize "-"
 
-        return {
-          ...placement,
-          studentName: student?.name || "Unknown Student",
-          team: student?.team || "—",
-          class: student?.class || "—",
-          category: student?.category || program.category, // fallback to program category
-          programName: program.programName,
-         programType: program.programType ,
-         score: calcScore(position, grade,program.category, program.programType , program.programId),
-        };
-
-      });
-      console.log(students.team === "-" ? students.name : "");
-      if (students.team === "-") {
-        console.log(students.name);
-      }
-      return { ...program, placements };
-    });
-
-  // ======================
-  // TEAM TOTAL SCORES
-  // ======================
   const teamScores = {};
-  structuredResults.forEach((program) => {
-    program.placements.forEach((p) => {
-      if (!teamScores[p.team]) teamScores[p.team] = 0;
-      teamScores[p.team] += p.score;
+const structuredResults = results.slice().reverse().map((program) => {
+    const placements = program.placements.map((p) => {
+      /* ---------- GROUP program : no student, score goes straight to team ---------- */
+      if (program.programType === "group") {
+        const position = p.position || null;
+        const grade    = p.grade === "-" ? null : p.grade;
+        const team     = p.team;                 // team must be supplied in data
+        return {
+          ...p,
+          studentName: "Group Entry",
+          class: "-",
+          category: program.category,
+          programName: program.programName,
+          programType: program.programType,
+          score: calcScore(position, grade, program.category, "group", program.programId),
+        };
+      }
+
+      /* ---------- SINGLE program : original student-based logic ---------- */
+      const student = students.find((s) => s.id === p.studentId);
+      const position = p.position || null;
+      const grade    = p.grade === "-" ? null : p.grade;
+      return {
+        ...p,
+        studentName: student?.name || "Unknown Student",
+        team: student?.team || "—",
+        class: student?.class || "—",
+        category: student?.category || program.category,
+        programName: program.programName,
+        programType: program.programType,
+        score: calcScore(position, grade, program.category, "single", program.programId),
+      };
+    });
+    return { ...program, placements };
+  });
+
+ 
+   structuredResults.forEach(({ placements }) => {
+    placements.forEach(({ team, score }) => {
+      if (!team || !["NAWA", "SWAFA", "SWABA", "SAMA"].includes(team)) return;
+      teamScores[team] = (teamScores[team] || 0) + score;
     });
   });
 
   const sortedTeams = Object.entries(teamScores)
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 4); // Top 4 teams for leaderboard
+    .slice(0, 4);
 
   // ======================
   // CATEGORY-WISE TEAM SCORES

@@ -2970,5 +2970,1038 @@ export const results = [
         "grade": "A"
       }
     ]
+  },
+  {
+    "programId": "B03",
+    "programName": "ADHĀN",
+    "category": "Bidaya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "798",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "788",
+        "position": 2
+      },
+      {
+        "studentId": "806",
+        "position": 3
+      },
+      {
+        "studentId": "817",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "B24",
+    "programName": "HAND WRITING URD",
+    "category": "Bidaya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "812",
+        "position": 1
+      },
+      {
+        "studentId": "802",
+        "position": 2
+      },
+      {
+        "studentId": "803",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "U07",
+    "programName": "GROUP SONG",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "753",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "745",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "714",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "U12",
+    "programName": "MATH TALENT",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "715",
+        "position": 1
+      },
+      {
+        "studentId": "710",
+        "position": 2
+      },
+      {
+        "studentId": "716",
+        "position": 2
+      },
+      {
+        "studentId": "761",
+        "position": 3
+      },
+      {
+        "studentId": "733",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "U19",
+    "programName": "POSTER MAKING",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "766",
+        "position": 1
+      },
+      {
+        "studentId": "717",
+        "position": 2
+      },
+      {
+        "studentId": "746",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "U24",
+    "programName": "STORY COMPLETION ENG",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "749",
+        "position": 1
+      },
+      {
+        "studentId": "778",
+        "position": 2
+      },
+      {
+        "studentId": "736",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "U31",
+    "programName": "TYPING BILINGUAL",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "715",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "731",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "766",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "742",
+        "position": 3,
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "TY14",
+    "programName": "SCIENCE MASTER",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "614",
+        "position": 1
+      },
+      {
+        "studentId": "586",
+        "position": 2
+      },
+      {
+        "studentId": "658",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TY15",
+    "programName": "POSTER DESIGNING DIGITAL",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "619",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "644",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "690",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TY18",
+    "programName": "HINDI VIDVAN",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "615",
+        "position": 1
+      },
+      {
+        "studentId": "688",
+        "position": 2
+      },
+      {
+        "studentId": "672",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TY21",
+    "programName": "ESSAY ENG",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "615",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "628",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "623",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TY23",
+    "programName": "ESSAY URD",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "647",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "643",
+        "position": 2,
+        "grade": "A"
+      },
+      {
+        "studentId": "671",
+        "position": 3,
+        "grade": "A"
+      },
+      {
+        "studentId": "679",
+        "grade": "B"
+      },
+      {
+        "studentId": "662",
+        "grade": "B"
+      },
+      {
+        "studentId": "645",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "TY29",
+    "programName": "SHORT STORY ENG",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "688",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "615",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "673",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "620",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "642",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "667",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "658",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "619",
+        "position": 3,
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "TY32",
+    "programName": "INSTANT NEWS PAPER MLM",
+    "category": "Thaniyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "647",
+        "position": 1
+      },
+      {
+        "studentId": "636",
+        "position": 2
+      },
+      {
+        "studentId": "675",
+        "position": 2
+      },
+      {
+        "studentId": "617",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TH04",
+    "programName": "NASHĪD ARB",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "572",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "553",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "543",
+        "position": 3,
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "TH12",
+    "programName": "ESSAY ENG",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "537",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "597",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "559",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TH16",
+    "programName": "POEM ENG",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "543",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "550",
+        "position": 2,
+        "grade": "A"
+      },
+      {
+        "studentId": "588",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "538",
+        "grade": "B"
+      },
+      {
+        "studentId": "537",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "TH18",
+    "programName": "POEM URD",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "551",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "552",
+        "position": 2
+      },
+      {
+        "studentId": "567",
+        "position": 2
+      },
+      {
+        "studentId": "587",
+        "position": 2
+      },
+      {
+        "studentId": "585",
+        "position": 2
+      },
+      {
+        "studentId": "558",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TH20",
+    "programName": "SHORT STORY ENG",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "537",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "540",
+        "position": 2,
+        "grade": "A"
+      },
+      {
+        "studentId": "588",
+        "position": 3,
+        "grade": "A"
+      },
+      {
+        "studentId": "538",
+        "grade": "B"
+      },
+      {
+        "studentId": "572",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "TH23",
+    "programName": "FEATURE ENG",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "537",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "572",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "538",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "550",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "TH25",
+    "programName": "TRANSLATION TRILINGUAL",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "535",
+        "position": 1
+      },
+      {
+        "studentId": "543",
+        "position": 2
+      },
+      {
+        "studentId": "534",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TH27",
+    "programName": "MULTILINGUAL QUIZ",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "535",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "572",
+        "position": 2,
+        "grade": "A"
+      },
+      {
+        "studentId": "534",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "601",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "TH29",
+    "programName": "SCIENCE MASTER",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "551",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "585",
+        "position": 2
+      },
+      {
+        "studentId": "604",
+        "position": 3
+      },
+      {
+        "studentId": "540",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "TH30",
+    "programName": "MANIPULATION POSTER",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "548",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "537",
+        "position": 2,
+        "grade": "A"
+      },
+      {
+        "studentId": "540",
+        "position": 3,
+        "grade": "A"
+      },
+      {
+        "studentId": "608",
+        "grade": "A"
+      },
+      {
+        "studentId": "605",
+        "grade": "A"
+      },
+      {
+        "studentId": "597",
+        "grade": "A"
+      }
+    ]
+  },
+  {
+    "programId": "TH31",
+    "programName": "WEB DESIGN",
+    "category": "Thanawiyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "551",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "548",
+        "position": 2
+      },
+      {
+        "studentId": "549",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "A05",
+    "programName": "PADAPPATTU",
+    "category": "Aliya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "785",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "468",
+        "position": 2
+      },
+      {
+        "studentId": "453",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "A10",
+    "programName": "Mr. TRASNSLATOR",
+    "category": "Aliya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "505",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "485",
+        "position": 2,
+        "grade": "A"
+      },
+      {
+        "studentId": "786",
+        "position": 3,
+        "grade": "A"
+      },
+      {
+        "studentId": "511",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "A17",
+    "programName": "POEM ENG",
+    "category": "Aliya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "473",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "485",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "490",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "A21",
+    "programName": "SHORT STORY ENG",
+    "category": "Aliya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "473",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "482",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "485",
+        "position": 3,
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "A26",
+    "programName": "TYPING QUADRILINGUAL",
+    "category": "Aliya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "503",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "786",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "505",
+        "position": 3,
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "K02",
+    "programName": "SAMA",
+    "category": "Kulliyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "785",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "564",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "629",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "782",
+        "position": 3,
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "K03",
+    "programName": "DEBATE ENGLISH",
+    "category": "Kulliyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "485",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "458",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "572",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "503",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "K04",
+    "programName": "MUNĀẒARAH",
+    "category": "Kulliyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "505",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "786",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "535",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "K05",
+    "programName": "DEBATE URDU",
+    "category": "Kulliyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "502",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "780",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "458",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "781",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "K06",
+    "programName": "SPEECH AND SONG MLM",
+    "category": "Kulliyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "617",
+        "position": 1,
+        "grade": "B"
+      },
+      {
+        "studentId": "785",
+        "position": 2
+      },
+      {
+        "studentId": "605",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "K07",
+    "programName": "VARSITY TALENT",
+    "category": "Kulliyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "458",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+        "studentId": "786",
+        "position": 2,
+        "grade": "B"
+      },
+      {
+        "studentId": "517",
+        "position": 3,
+        "grade": "B"
+      },
+      {
+        "studentId": "433",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "programId": "K09",
+    "programName": "PHOTOGRAPHY",
+    "category": "Kulliyya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "597",
+        "position": 1
+      },
+      {
+        "studentId": "537",
+        "position": 2
+      },
+      {
+        "studentId": "517",
+        "position": 3
+      },
+      {
+        "studentId": "506",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "programId": "K10",
+    "programName": "REEL MAKING",
+    "category": "Kulliyya",
+    "programType": "group",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "team" : "SWAFA",
+        "studentId": "undefined",
+        "position": 1,
+        "grade": "A"
+      },
+      {
+         "team" : "NAWA",
+        "studentId": "undefined",
+        "position": 2,
+        "grade": "A"
+      },
+      // ['NAWA', 'SWAFA', 'SWABA', 'SAMA'
+      {
+         "team" : "SAMA",
+        "studentId": "undefined",
+        "position": 3,
+        "grade": "A"
+      },
+      {
+         "team" : "SWABA",
+        "studentId": "undefined",
+        "position": 3,
+        "grade": "A"
+      }
+    ]
+  },
+  {
+    "programId": "U04",
+    "programName": "SONG MLM",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "753",
+        "position": 1
+      },
+      {
+        "studentId": "726",
+        "position": 2
+      },
+      {
+        "studentId": "714",
+        "position": 3
+      }
+    ]
   }
 ]
