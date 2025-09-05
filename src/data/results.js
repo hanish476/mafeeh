@@ -4025,4 +4025,58 @@ export const results = [
       }
     ]
   },
+  {
+    "programId": "B26",
+    "programName": "POEM WRITING MLM",
+    "category": "Bidaya",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "793",
+        "position": 3
+      },
+      {
+        "studentId": "804",
+        "position": 2
+      },
+   
+    ]
+  },
+   {
+    "programId": "U21",
+    "programName": "POEM WRITING MLM",
+    "category": "Ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "753",
+        "position": 3
+      },
+      {
+        "studentId": "774",
+        "position": 2
+      },
+   
+    ]
+  },
+   {
+    "programId": "U23",
+    "programName": "SHORT STORY MLM",
+    "category": "ula",
+    "programType": "single",
+    "datePublished": "2025-09-01T12:00:00",
+    "placements": [
+      {
+        "studentId": "731",
+        "position": 2
+      },
+      {
+        "studentId": "774",
+        "position": 3
+      },
+   
+    ]
+  },
 ]
