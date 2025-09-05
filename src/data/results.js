@@ -4064,7 +4064,7 @@ export const results = [
    {
     "programId": "U23",
     "programName": "SHORT STORY MLM",
-    "category": "ula",
+    "category": "Ula",
     "programType": "single",
     "datePublished": "2025-09-01T12:00:00",
     "placements": [
